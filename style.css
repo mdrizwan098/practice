@@ -1,0 +1,18 @@
+
+header div{
+    gap: 500px;
+}
+
+img{
+    height: 40px;
+    width: 50px;
+
+}
+div{
+    display: flex;
+}
+
+   .search{
+    height: 40px;
+    width: 30px;
+   }
