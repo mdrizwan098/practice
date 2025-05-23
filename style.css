@@ -6,6 +6,7 @@ header div{
 img{
     height: 40px;
     width: 50px;
+    
 
 }
 div{
@@ -16,3 +17,90 @@ div{
     height: 40px;
     width: 30px;
    }
+   header{
+    background-color: aquamarine;
+   }
+   
+   .sitare{
+
+    height: 500px;
+    width: 500px;
+
+   }
+
+
+   main{
+    background-color: blueviolet;
+   }
+
+   /* === Part 1: Carousel Container Styling === */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 1200px; /* adjust as needed */
+    height: 500px;
+    position: relative;
+}
+
+/* === Part 2: Image Styling === */
+.sitare {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeSlide 9s infinite;
+}
+
+/* === Part 3: Delay animations for each image === */
+.sitare:nth-child(1) {
+    animation-delay: 2s;
+}
+.sitare:nth-child(2) {
+    animation-delay: 4s;
+}
+.sitare:nth-child(3) {
+    animation-delay: 6s;
+}
+.sitare:nth-child(4) {
+    animation-delay: 9s;
+}
+.sitare:nth-child(5) {
+    animation-delay: 11s;
+}
+
+/* === Part 4: Animation Keyframes === */
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+article{
+    background-color: green;
+    border-radius: 30px;
+    border: solid black 4px;
+    
+}
+body{
+    overflow-y: hidden;
+}
+
